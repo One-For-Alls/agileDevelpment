@@ -1,52 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/index.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <header id="container-header">
-      <div class="container-header-body">
-        <div class="container-header-col-1">
-          <img class=" logo-header" src="./public/img/logo.png" alt="logo">
-        </div>
-        <div class="container-header-col-2">
-          <nav>
-            <ul>
-              <li><a href="">Inicio</a></li>
-              <li><a href="">servicios</a></li>
-              <li><a href="">proyectos</a></li>
-              <li><a href="">Articulos</a></li>
-              <li><a href="">nosotros</a></li>
-              <li><a href="">contacto</a></li>
-            </ul>
-          </nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./public/img/logo2.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./public/css/index.css">
+  <title>Agile Development</title>
+</head>
+
+<body>
+  <header id="container-header">
+    <div class="container-header-body">
+      <div class="container-header-col-1">
+        <img class=" logo-header" src="./public/img/logo.png" alt="logo">
+      </div>
+      <div class="container-header-col-2">
+        <nav>
+          <ul class="main-menu">
+            <li><a class="child-primary" href="">Inicio</a></li>
+            <li class="dropdown"><a class="child-primary" href="">servicios</a>
+              <ul class="dropdown-child">
+                <li><a href="">Paginas web</a></li>
+                <li><a href="">Desarrollo de software</a></li>
+                <li><a href="">Venta de Dominio</a></li>
+                <li><a href="">Alojamiento de hosting</a></li>
+                <li><a href="">Diseño de logos</a></li>
+              </ul>
+            </li>
+            <li><a class="child-primary" href="">proyectos</a></li>
+            <li><a class="child-primary" href="">Articulos</a></li>
+            <li><a class="child-primary" href="">nosotros</a></li>
+            <li><a class="child-primary" href="">contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="container-main">
+    <div class="main-portada">
+      <div class="main-img-p">
+        <div class="img-p-container">
+          <img class="img-p-0" src="./public/img/slider-1.png">
         </div>
       </div>
-    </header>
-    <main id="container-main">
-      <div class="main-portada">
-        <div class="main-img-p">
-          <div class="img-p-container">
-            <img class="img-p-0" src="./public/img/slider-1.png">
-            <p>
-              Hola! somos <strong>Agile Development</strong> nacimos con el fin de poder brindarte servicios de desarrollo de software y paginas web a 
-              la medida y con precios accesibles para potenciar tu <strong>negocio</strong> o <strong>emprendimiento</strong>.
-              Nuestro compromiso es trabajar estrechamente de la mano contigo para poder cubrir las necesidades de tu negocio y automatizarlo
-              tenemos mucho mas que ofrecerte sigue explorando para ver los <strong>proyectos realizados</strong> y todos los <strong>servicios</strong> que tenemos para ti!
-            </p>
-          </div>
-          </div>
-          <div class="main-img-s">
-            <img class="img-s-0" src="./public/img/wave.svg" alt="-">
-            <img class="img-s-1" src="./public/img/wave.svg" alt="-">
-          </div>
+      <div class="main-img-s">
+        <img class="img-s-0" src="./public/img/wave.svg" alt="-">
+        <img class="img-s-1" src="./public/img/wave.svg" alt="-">
       </div>
-    </main>
-    <footer>PIE DE PAGINA</footer>
-  </body>
-  <script src="./public/js/index.js"></script>
+    </div>
+    <section id="services-small-container">
+      <div class="services-body">
+        <div class="services-body-title">
+          <p>
+            Hola! somos <strong>Agile Development</strong> nacimos con el fin de poder brindarte servicios de desarrollo
+            de software y paginas web a
+            la medida y con precios accesibles para potenciar tu <strong>negocio</strong> o
+            <strong>emprendimiento</strong>.
+            Nuestro compromiso es trabajar estrechamente de la mano contigo para poder cubrir las necesidades de tu
+            negocio y automatizarlo
+            tenemos mucho mas que ofrecerte sigue explorando para ver los <strong>proyectos realizados</strong> y todos
+            los <strong>servicios</strong> que tenemos para ti!
+          </p>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="services-small-container-2">
+      <div class="services-body-child">
+        <figure>
+          <img src="./public/img/wordpress.webp" alt="">
+          <h1>wordpress</h1>
+          <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+        </figure>
+        <figure>
+          <img src="./public/img/herramientas.webp" alt="">
+          <h1>Herramientas</h1>
+          <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+        </figure>
+        <figure>
+          <img src="./public/img/front.webp" alt="">
+          <h1>Front-End</h1>
+          <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+        </figure>
+      </div>
+    </section>
+    <section>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi vel dolores velit! Excepturi facere repudiandae modi laborum cum maxime eligendi maiores a! Asperiores accusantium officia facilis. Cum laudantium in voluptates.</section>
+  </main>
+  <footer>PIE DE PAGINA</footer>
+</body>
+<script src="./public/js/index.js"></script>
+
 </html>
