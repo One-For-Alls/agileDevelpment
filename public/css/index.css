@@ -1,0 +1,118 @@
+/* gama colores 
+  principal : #1D2948
+  secundario 1: #F6F098
+  secundario 2: #F0929A
+  secundario 3: #5CF7E4
+*/
+:root {
+  --font-root-size:1em;
+  --bg-primario:#152d68;
+  --bg-secundario-1:#F6F098;
+  --bg-secundario-2:#F0929A;
+  --bg-secundario-3:#5fcec1;
+}
+
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container-header {
+  background-color: #1D2948;
+  padding: .5rem 0;
+}
+
+.container-header-body{
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-header-col-1 .logo-header {
+  width: 160px;
+}
+
+.container-header-col-2 {
+  font-weight: 600;
+}
+
+.container-header-col-2 nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-header-col-2 nav ul li{
+  margin: 0 .4em 0 0;
+}
+
+.container-header-col-2 nav ul li a{
+  font-size: var(--font-root-size);
+  text-decoration: none;
+  color: #ffffff;
+  padding: .4em .6em;
+  position: relative;
+  display: block;
+}
+
+.container-header-col-2 nav ul li a:hover {
+  cursor: pointer;
+  color: var(--bg-secundario-3)
+}
+
+.container-header-col-2 nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0.6em;
+  right: 0.6em;
+  bottom: 0;
+  height: 0.12em;
+  background-color: var(--bg-secundario-3);
+  transform: scaleX(1);
+  transform-origin: 0 50%;
+  transition-duration: .2s;
+  transition-property: transform;
+}
+
+#container-main .main-img-p {
+  position: absolute;
+}
+
+.img-p-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-p-container p {
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 0 2rem;
+  margin-top: 5rem;
+  color: var(--bg-primario)
+}
+
+#container-main .main-img-p *{
+  z-index: 10;
+}
+#container-main .main-img-p .img-p-0{
+  margin-top: 2rem;
+  width: 550px;
+}
+#container-main .main-img-s .img-s-1{
+  margin-top: 1rem;
+  transform: rotate(180deg);
+}
+
+
+@media only screen and (min-width: 1200px) {
+  :root {
+      --font-root-size:1.25em;
+  }
+}
