@@ -6,7 +6,7 @@
 */
 :root {
   --font-root-size:1em;
-  --bg-primario:#1D2948;
+  --bg-primario:#352775;
   --bg-secundario-1:#F6F098;
   --bg-secundario-2:#ff7927;
   --bg-secundario-3:#5fcec1;
@@ -16,10 +16,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
 }
 
 #container-header {
-  background-color: #1D2948;
+  background-color: var(--bg-primario);
   padding: .5rem 0;
 }
 
@@ -54,7 +55,8 @@
 }
 
 .container-header-col-2 nav .main-menu li .child-primary {
-  font-size: var(--font-root-size);
+  font-size: 1.1rem;
+  font-weight: 400;
   text-decoration: none;
   color: #ffffff;
   padding: .4em .6em;
@@ -91,7 +93,7 @@
 .dropdown-child {
   display: none;
   position: absolute;
-  background-color: var(--bg-primario);
+  background-color: #1d2948c4;
   list-style: none;
   left: .6em;
   right: .6em;
@@ -144,67 +146,165 @@
 #container-main .main-img-s .img-s-1{
   margin-top: 1rem;
   transform: rotate(180deg);
+  vertical-align: top;
 }
 
-#services-small-container {
-  background: linear-gradient(0deg, rgba(29,41,72,1) 0%, rgba(84,178,172,1) 100%);
+#tools-small-container {
+  background: linear-gradient(0deg, rgba(29, 41, 72, 0.838) 0%, rgb(93, 195, 211) 100%);
   padding-bottom: 9rem;
 } 
-.services-body {
-  margin: auto;
-  margin-top: 1.5rem;
-  width: 100%;
-}
-
-.services-body-title {
-  font-size: 1.5rem;
-  color: #fff;
-  text-align: center;
-  padding: 4rem;
-}
-
-.services-body-title p{
-  margin: 1rem 8rem;
-}
-
-.services-body-child{
+.tools-body {
+  margin: 0 0 4rem auto;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin-top: 3.2rem;
 }
 
-.services-body-child figure{
-  background-color: var(--bg-secundario-1);
-  width: 22%;
+.tools-body-title {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  padding: 4.5rem;
+}
+
+.tools-body-title p{
+  margin: 1rem 8rem;
+}
+
+
+#tools-small-container-2 {
+  margin: -12rem 2rem 0 2rem;
+} 
+
+.tools-body figure{
+  background-color: #fff;
+  width: 30%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   padding: 2.2rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.services-body-child figure img{
+.tools-body figure img{
   max-width: 140px;
 }
 
-.services-body-child figure h1{
+.tools-body figure .tools-b-title{
   padding: 1.2rem;
-  color: var(--bg-secundario-2);
-}
-
-.services-body-child figure h4{
-  padding: 5px;
-  color: var(--bg-primario);
+  color: #1c253c;
+  font-size: 2rem;
   text-align: center;
 }
 
-#services-small-container-2 {
-  margin-top: -12rem;
-} 
+.tools-body figure .tools-b-description, .tools-body figure .tools-b-sub-description{
+  padding: 5px;
+  color: #000;
+  text-align: center;
+  font-size: 1.1rem;
+  list-style: none;
+}
+.tools-body figure .tools-b-sub-title{
+  text-align: center;
+  padding: 1.2rem;
+  color: var(--bg-primario);
+  font-size: 1.2rem;
+}
+
+.tools-body figure .tools-b-sub-description li{
+  padding: .5rem 0;
+}
+
+.testimonios-container {
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+  color: #1c253c;
+}
+
+.testimonios-container .testimonio-titulo {
+  font-size: 2rem;
+}
+
+.testimonios-container .testimonio-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 999px;
+  background-size: cover;
+}
+
+.testimonios-container .testimonio-texto{
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem 4rem;
+}
+
 footer {
+  margin-top: 3rem;
   background-color: #1c253c;
-  padding: 5rem;
+  padding: 2rem;
+}
+
+.footer-container {
+  width: 100%;
+  margin: auto;
+  color: #fff;
+}
+
+.footer-body {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer-child {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  text-align: center;
+}
+
+.child-first{
+text-align: center;
+}
+
+.child-first img{
+  width: 200px;
+}
+
+.child-first h1 {
+  font-size: 1.5rem;
+}
+
+.child-first h4 {
+  font-weight: 300;
+}
+
+.footer-redes {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-redes a{
+  margin: 10px;
+  text-decoration: none;
+  padding: .5rem;
+  border: 1px solid var(--bg-secundario-3);
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.footer-redes a:hover{
+  background-color: var(--bg-secundario-3);
+  color: var(--bg-primario);
+  border: 1px solid transparent;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 1200px) {
