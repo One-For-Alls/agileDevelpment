@@ -1,2 +1,7 @@
 # Landing page "Agile Development"
-## pagina principal del dominio
+  
+## Introducción
+  
+Esta landing page esta creada para ofrecer servicios de marketing digital para 
+un pequeño emprendimiento en el cual se brindan diversos servicios, fue realizada 
+con 
