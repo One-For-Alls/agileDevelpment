@@ -19,6 +19,5 @@ y al final cuenta con un formulario de contacto realizado con php.
   
 - Ejecutar el proyecto desde localhost o un hosting
 
-Tambien puedes visualizar el proyecto en linea [Aquí](https://agilesdevelopments.com/){:target=_blank}
-
+Tambien puedes visualizar el proyecto en linea [Aquí](https://agilesdevelopments.com/){:target="_blank"}
 
